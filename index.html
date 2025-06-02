@@ -8,6 +8,72 @@
     <title>Form JS</title>
 </head>
 <body>
-    
+    <h1>Mon super formulaire</h1>
+    <form id="form">
+        <div>
+            <label for="name">Nom :</label>
+            <input type="text" name="name" id="name">
+            <label for="firstName">Prenom :</label>
+            <input type="text" name="firstName" id="firstName">
+        </div>
+        <div>
+            <label for="age">Age :</label>
+            <input type="number" name="age" id="age">
+        </div>
+        <div>
+            <label for="gender">Genre :</label>
+            <div>
+                <label for="man">Homme</label>
+                <input type="radio" id="man" name="gender" value="gender">
+            </div>
+            <div>
+                <label for="woman">Femme</label>
+                <input type="radio" id="woman" name="gender" value="gender">
+            </div>
+        </div>
+        <label for="job">Profession :</label>
+        <select name="job" id="job">
+            <option value="student">Étudiant(e)</option>
+            <option value="dev">Développeur(se)</option>
+            <option value="teacher">Enseignant(e)</option>
+            <option value="designer">Designer</option>
+            <option value="other">Autre</option>
+        </select>
+        <div>Hobby :
+            <div>
+                <input type="checkbox" id="reading" name="reading" value="reading">
+                <label for="reading">Lecture</label>
+            </div>
+            <div>
+                <input type="checkbox" id="sport" name="sport" value="sport">
+                <label for="sport">Sport</label>
+            </div>
+            <div>
+                <input type="checkbox" id="video-game" name="video-game" value="video-game">
+                <label for="video-game">Jeux vidéo</label>
+            </div>
+            <div>
+                <input type="checkbox" id="music" name="music" value="music">
+                <label for="music">Musique</label>
+            </div>
+            <div>
+                <input type="checkbox" id="travel" name="travel" value="travel">
+                <label for="travel">Voyage</label>
+            </div>
+        </div>
+        <label for="region">Region :</label>
+        <select name="region" id="region">
+            <option value="Ile-de-France">Île-de-France</option>
+            <option value="Provence-Alpes">Provence-Alpes-Côte d’Azur</option>
+            <option value="Bretagne">Bretagne</option>
+            <option value="Grand-Est">Grand-Est</option>
+            <option value="Auvergne-Rhone-Alpes">Auvergne-Rhône-Alpes</option>
+        </select>
+        <div>
+            <label for="linkedin">Lien LinkedIn :</label>
+            <input type="url" name="linkedin" id="linkedin">
+        </div>
+        <button type="submit" name="submitBtn" id="submitBtn">Valider</button>
+    </form>
 </body>
 </html>
